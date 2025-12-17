@@ -4,6 +4,7 @@ provider "aws" {
 }
 
 resource "aws_route53_record" "app_subdomain" {
+  allow_overwrite = true  
   zone_id = var.route53_zone_id
   name    = var.subdomain
   type    = "A"
