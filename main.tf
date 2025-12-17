@@ -1,6 +1,5 @@
 provider "aws" {
   region  = "us-east-1"
-  version = "~> 5.0"
 }
 
 resource "aws_route53_record" "app_subdomain" {
